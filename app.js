@@ -6,6 +6,10 @@ const apikey = 'ad7ef549b9a6fdbb99f3581ba04b9bee'
 const moviesList = document.getElementById('movies-list');
 
 const loadingText = document.createElement('li');
+let url = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genres=${genre}&vote_average.gte=${rating}`;
+if (year) {
+  url += `&primary_release_year=${year}`;
+}
 
 form.addEventListener('submit', (e) => handle_submit(e))
 

@@ -14,6 +14,26 @@ header ul {
   justify-content: space-evenly;
 }
 
+
+#movie-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+main div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main div ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 /* adjust */
 
 body {
@@ -37,13 +57,34 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  text-align: center;
+}
+
+#movie-form {
+  padding: 20px;
+  gap: 10px;
+}
+
+#genre,
+#rating,
+#year {
+  width: 20%;
+}
+
+main div ul {
+  gap: 50px;
+}
+
 /* misc */
 
 body {
-  background-color: #88304E;
+  background: radial-gradient(#E23E57, #E23E57, #311D3F);
 }
 
-a {
+a,
+#movie-form,
+#movie-form button {
   font-size: large;
   color: white;
 }
@@ -69,6 +110,24 @@ header div a {
   background-color: #E23E57;
 }
 
-h1 {
+h1,
+main {
   color: beige;
+}
+
+#movie-form {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
+}
+
+#movie-form input,
+#movie-form select {
+  padding: 15px;
+}
+
+#movie-form button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #311D3F;
+  border: 0px;
+  border-radius: 5%;
 }

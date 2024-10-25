@@ -41,6 +41,14 @@ main li div {
   align-items: baseline;
 }
 
+footer,
+footer a {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 10px
+}
+
 /* adjust */
 
 body {
@@ -91,6 +99,15 @@ main li div {
 #movieTitle {
   max-width: 200px;
   overflow-wrap: break-word;
+}
+
+footer a img {
+  max-width: 20px;
+  max-height: 20px;
+}
+
+footer a p {
+  margin: 0px;
 }
 
 /* misc */
@@ -155,4 +172,8 @@ main {
   padding: 10px;
   background: rgba(0, 0, 0, 0.7);
   border-radius: 5%;
+}
+
+footer {
+  background: linear-gradient(#a66ece, #1f1f1f);
 }

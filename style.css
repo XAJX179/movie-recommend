@@ -12,6 +12,7 @@ body {
 header ul {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 
@@ -28,7 +29,12 @@ main div {
   align-items: center;
 }
 
-main div ul {
+main img {
+  width: 100%;
+  height: auto;
+}
+
+#movies-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

@@ -1,0 +1,74 @@
+* {
+  list-style: none;
+  text-decoration: none;
+}
+
+/* layout */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* adjust */
+
+body {
+  margin: 0px;
+}
+
+header {
+  padding-bottom: 40%;
+}
+
+header div {
+  margin-top: 20%;
+  padding-bottom: 5%;
+}
+
+header ul {
+  gap: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* misc */
+
+body {
+  background-color: #88304E;
+}
+
+a {
+  font-size: large;
+  color: white;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
+    url('https://static0.makeuseofimages.com/wordpress/wp-content/uploads/2022/03/mobile-phone-with-movie-iconography-on-top.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+header div {
+  font-size: large;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
+  text-align: center;
+  color: white;
+}
+
+header ul li,
+header div a {
+  border: 10px solid #E23E57;
+  border-radius: 10%;
+  background-color: #E23E57;
+}
+
+h1 {
+  color: beige;
+}

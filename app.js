@@ -11,25 +11,25 @@ if (year) {
   url += `&primary_release_year=${year}`;
 }
 
-form.addEventListener('submit', (e) => handle_submit(e))
+form.addEventListener('submit', (e) => handleSubmit(e))
 
-function handle_submit(e) {
+function handleSubmit(e) {
   e.preventDefault();
-  clear_list();
-  loading_text();
-  get_recommendations();
+  clearList();
+  loadingMessage();
+  getRecommendations();
 }
 
-function clear_list() {
+function clearList() {
   moviesList.innerText = '';
 }
 
-function loading_text() {
+function loadingMessage() {
   loadingText.textContent = 'Loading recommendations...';
   moviesList.appendChild(loadingText);
 }
 
-function get_recommendations() {
+function getRecommendations() {
   fetch(url)
     .then(response => {
       if (!response.ok) {
@@ -38,7 +38,7 @@ function get_recommendations() {
       return response.json();
     })
     .then(data => {
-      clear_list();
+      clearList();
       if (data.results.length > 0) {
 
       }

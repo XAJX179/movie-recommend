@@ -34,6 +34,13 @@ main div ul {
   justify-content: center;
 }
 
+main li div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
 /* adjust */
 
 body {
@@ -74,6 +81,16 @@ h2 {
 
 main div ul {
   gap: 50px;
+}
+
+main li div {
+  overflow-wrap: break-word;
+  gap: 15px;
+}
+
+#movieTitle {
+  max-width: 200px;
+  overflow-wrap: break-word;
 }
 
 /* misc */
@@ -129,5 +146,13 @@ main {
   padding: 10px;
   background-color: #311D3F;
   border: 0px;
+  border-radius: 5%;
+}
+
+#movieTitle,
+#movieReleaseDate,
+#movieRating {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.7);
   border-radius: 5%;
 }

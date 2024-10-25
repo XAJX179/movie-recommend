@@ -17,6 +17,7 @@ function handle_submit(e) {
   e.preventDefault();
   clear_list();
   loading_text();
+  get_recommendations();
 }
 
 function clear_list() {
@@ -26,4 +27,26 @@ function clear_list() {
 function loading_text() {
   loadingText.textContent = 'Loading recommendations...';
   moviesList.appendChild(loadingText);
+}
+
+function get_recommendations() {
+  fetch(url)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(data => {
+      clear_list();
+      if (data.results.length > 0) {
+
+      }
+      else {
+
+      }
+    })
+    .catch(error => {
+      console.error('Error fetching recommendations...', error);
+    })
 }

@@ -3,3 +3,19 @@ header div a {
   border-radius: 0%;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(102, 255, 0, 0.562))
 }
+
+#learn-genre {
+  background: none;
+  border: 10px solid #E23E57;
+  border-radius: 10%;
+  background-color: #E23E57;
+}
+
+main div {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+main div p {
+  font-size: larger;
+}

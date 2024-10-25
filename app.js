@@ -2,7 +2,7 @@ const form = document.getElementById('movie-form');
 const genre = document.getElementById('genre')
 const rating = document.getElementById('rating')
 const year = document.getElementById('year')
-const apikey = 'ad7ef549b9a6fdbb99f3581ba04b9bee'
+const apiKey = 'ad7ef549b9a6fdbb99f3581ba04b9bee'
 const moviesList = document.getElementById('movies-list');
 
 const loadingText = document.createElement('li');
@@ -48,5 +48,10 @@ function get_recommendations() {
     })
     .catch(error => {
       console.error('Error fetching recommendations...', error);
+      errorMessage();
     })
+}
+
+function errorMessage() {
+  moviesList.innerHTML = '<li>Error fetching recommendations. Please try again later.</li>';
 }

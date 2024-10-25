@@ -90,6 +90,7 @@ h2 {
 #genre,
 #rating,
 #year {
+  min-width: 30vw;
   width: 20%;
 }
 

@@ -47,10 +47,13 @@ function getRecommendations(url, moviesList) {
 
           const movieInfo = document.createElement('div');
           const movieTitle = document.createElement('p');
+          movieTitle.id = 'movieTitle'
           movieTitle.textContent = `${movie.title}`
           const movieReleaseDate = document.createElement('p');
+          movieReleaseDate.id = 'movieReleaseDate'
           movieReleaseDate.textContent = `${movie.release_date.split('-')[0]}`
           const movieRating = document.createElement('p');
+          movieRating.id = 'movieRating'
           movieRating.textContent = `⭐ ${movie.vote_average}`
 
           movieInfo.appendChild(movieTitle);

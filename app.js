@@ -1,6 +1,11 @@
 const form = document.getElementById('movie-form');
 const apiKey = 'ad7ef549b9a6fdbb99f3581ba04b9bee';
 const moviesList = document.getElementById('movies-list');
+const inputYear = document.getElementById('year')
+
+currentYear = new Date().getFullYear()
+inputYear.max = currentYear
+inputYear.value = currentYear
 
 form.addEventListener('submit', (e) => handleSubmit(e))
 
@@ -84,3 +89,4 @@ function errorMessage(moviesList) {
   li.textContent = 'Error fetching recommendations. Please try again later.';
   moviesList.appendChild(li);
 }
+
